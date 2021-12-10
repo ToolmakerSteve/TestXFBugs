@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Timer = System.Timers.Timer;
 
 namespace TestBugs
 {
@@ -108,5 +109,64 @@ namespace TestBugs
             ImageSource source = ImageSource.FromResource(resourceID, assembly);
             return source;
         }
-    }
+
+		#region --- Timers ---
+		// --- Fixed-delay timer vs. Delay-after-finish-work timer ---
+		Timer _timer;
+
+		private void StartFixedDelayTimer(float seconds, Action action)
+		{
+			_timer = new Timer(1000 * seconds);
+			// Repeat the timer event until explicitly stopped. (true by default).
+			_timer.AutoReset = true;
+			_timer.Elapsed += (sender, e) => action();
+			_timer.Start();
+		}
+
+		// Fixed-delay timer vs. Delay-after-finish-work.
+		// For long running "action", increase "idleSeconds" to guarantee more time for other background tasks.
+		private void StartFixedDelayTimerAvoidReentrancy(float seconds, Action action, float idleSeconds = 0.1f)
+		{
+			// In case a very short "seconds" is given, without a correspondingly short "idleSeconds".
+			// Comment out, if you want to allow idleSeconds to force multiple time events to be skipped.
+			idleSeconds = Math.Min(idleSeconds, 0.5f * seconds);
+
+			_timer = new Timer(1000 * seconds);
+			// Repeat the timer event until explicitly stopped. (true by default).
+			_timer.AutoReset = true;
+
+			bool entered = false;
+			_timer.Elapsed += (sender, e) => {
+				if (entered)
+					// Timer code already running! Skip this one.
+					return;
+				entered = true;
+				try {
+					action();
+					// IMPORTANT: This is needed to "see and skip" next timer event,
+					// if it happens during "action". Without this, timer events can "pile up",
+					// starving other background tasks.
+					System.Threading.Thread.Sleep((int)(1000 * idleSeconds));
+				} finally {
+					entered = false;
+				}
+			};
+
+			_timer.Start();
+		}
+
+		private void StartDelayBetweenWorkTimer(float seconds, Action action)
+		{
+			_timer = new Timer(1000 * seconds);
+			// Only fire the timer once. (But in Elapsed, we fire it again.)
+			_timer.AutoReset = false;
+			_timer.Elapsed += (sender, e) => {
+				action();
+				// Fire the timer again.
+				_timer.Start();
+			};
+			_timer.Start();
+		}
+		#endregion
+	}
 }
