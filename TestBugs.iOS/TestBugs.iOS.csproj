@@ -61,6 +61,7 @@
     <MtouchArch>ARM64</MtouchArch>
     <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -129,7 +130,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\TestBugs\TestBugs.csproj">
-      <Project>{25A53D28-489E-47D1-9D8F-0D730184C9AA}</Project>
+      <Project>{12ED7006-AFB9-494C-A73C-588D71D88E23}</Project>
       <Name>TestBugs</Name>
     </ProjectReference>
   </ItemGroup>

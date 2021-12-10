@@ -61,6 +61,7 @@
     <MtouchArch>ARM64</MtouchArch>
     <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -129,7 +130,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\TestXFUWP\TestXFUWP.csproj">
-      <Project>{3FC4AC14-2112-4E82-B1DA-A4086C709484}</Project>
+      <Project>{FF03273D-12CE-4DE5-9E3E-557F39BBCCEC}</Project>
       <Name>TestXFUWP</Name>
     </ProjectReference>
   </ItemGroup>

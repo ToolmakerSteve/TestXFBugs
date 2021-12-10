@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -92,7 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TabbedPage1\TabbedPage1.csproj">
-      <Project>{DADAA899-8E2C-4637-A0CB-2CD8D55A3389}</Project>
+      <Project>{684579B5-E507-4FCA-9397-3B4A1A3E9D16}</Project>
       <Name>TabbedPage1</Name>
     </ProjectReference>
   </ItemGroup>

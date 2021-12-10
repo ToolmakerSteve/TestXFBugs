@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -88,7 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TestXFUWP\TestXFUWP.csproj">
-      <Project>{3FC4AC14-2112-4E82-B1DA-A4086C709484}</Project>
+      <Project>{FF03273D-12CE-4DE5-9E3E-557F39BBCCEC}</Project>
       <Name>TestXFUWP</Name>
     </ProjectReference>
   </ItemGroup>
