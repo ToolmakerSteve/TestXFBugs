@@ -8,6 +8,7 @@ namespace TestXFUWP
 	{
 		public App()
 		{
+			Test();
 			InitializeComponent();
 
 			//MainPage = new MainPage();
@@ -25,6 +26,11 @@ namespace TestXFUWP
 
 		protected override void OnResume()
 		{
+		}
+
+		private void Test()
+		{
+			//ColorX.MakeMe();
 		}
 	}
 }

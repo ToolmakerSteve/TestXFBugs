@@ -6,9 +6,9 @@ using Xamarin.Forms.Xaml;
 
 namespace TabbedPage1.Views
 {
-	public partial class AboutPage : ContentPage
+	public partial class HelpPage : ContentPage
 	{
-		public AboutPage()
+		public HelpPage()
 		{
 			InitializeComponent();
 		}

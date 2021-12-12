@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using TabbedPage1.Views;
 using Xamarin.Forms;
+using XFShellApp.Views;
 
-namespace TabbedPage1.ViewModels
+namespace XFShellApp.ViewModels
 {
 	public class LoginViewModel : BaseViewModel
 	{
