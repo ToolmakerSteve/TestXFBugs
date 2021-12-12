@@ -13,7 +13,8 @@ namespace TestXFUWP
 
 			//MainPage = new MainPage();
 			//MainPage = new TestBugs.AbsoluteLayoutPage();
-			MainPage = new CollectionWithEmptyViewPage();
+			//MainPage = new CollectionWithEmptyViewPage();
+			MainPage = new PageWithQueryData();
 		}
 
 		protected override void OnStart()
