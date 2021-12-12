@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TestXFUWP
 {
-	class ItemModel
+	public class ItemModel
 	{
 		public ItemModel(string name)
 		{
