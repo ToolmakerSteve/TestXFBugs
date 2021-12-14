@@ -4,8 +4,7 @@
              x:Class="TestXFUWP.PageWithQueryData" BackgroundColor="LightGreen">
     <ContentPage.Content>
         <StackLayout BackgroundColor="Blue">
-            <!--VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"-->
-            <CollectionView ItemsSource="{Binding Items}" BackgroundColor="Violet">
+            <CollectionView x:Name="MyCollection" ItemsSource="{Binding Items}" BackgroundColor="Violet">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout BackgroundColor="Gray">

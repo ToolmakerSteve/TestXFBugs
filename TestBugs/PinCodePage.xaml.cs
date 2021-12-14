@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace TestXFUWP
+namespace TestBugs
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class PageWithQueryData : ContentPage
+	public partial class PinCodePage : ContentPage
 	{
-		public PageWithQueryData()
+		public PinCodePage()
 		{
 			InitializeComponent();
+		}
 
-			var vm = new VMWithQueryData();
-
-			MyCollection.SetBinding(ItemsView.ItemsSourceProperty, nameof(VMWithQueryData.Items));
-			BindingContext = vm;
+		private async void NumberCommand(object sender, EventArgs e)
+		{
+			var button = sender;
 		}
 	}
 }

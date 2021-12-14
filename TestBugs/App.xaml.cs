@@ -24,9 +24,11 @@ namespace TestBugs
 			//LoadMyPage(50.0);
 			//ReloadMyPageDeferred(25.0, 3);
 			//ReloadMyPageDeferred(10.0, 6);
-			MainPage = new TestPage();
 			//MainPage = new AbsoluteLayoutPage();
 			//MainPage = new SoftKeyboardEntryPage();
+			//MainPage = new TestPage();
+			//MainPage = new DatePickerTestPage();
+			MainPage = new PinCodePage();
 		}
 
 		private void Test()

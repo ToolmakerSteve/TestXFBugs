@@ -7,19 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace TestXFUWP
+namespace TestBugs
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class PageWithQueryData : ContentPage
+	public partial class DatePickerTestPage : ContentPage
 	{
-		public PageWithQueryData()
+		public DatePickerTestPage()
 		{
 			InitializeComponent();
-
-			var vm = new VMWithQueryData();
-
-			MyCollection.SetBinding(ItemsView.ItemsSourceProperty, nameof(VMWithQueryData.Items));
-			BindingContext = vm;
 		}
 	}
 }
