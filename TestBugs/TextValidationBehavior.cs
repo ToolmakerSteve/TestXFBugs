@@ -2,6 +2,7 @@
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
+using Xamarin.CommunityToolkit.Behaviors;
 using Xamarin.CommunityToolkit.Behaviors.Internals;
 using Xamarin.Forms;
 
@@ -119,11 +120,11 @@ namespace TestBugs
 		protected override ValueTask<bool> ValidateAsync(object? value, CancellationToken token)
 		{
 			var text = value?.ToString();
-			return new ValueTask<bool>(
-				text != null &&
-				text.Length >= MinimumLength &&
-				text.Length <= MaximumLength &&
-				(regex?.IsMatch(text) ?? false));
+			bool result = text != null &&
+							text.Length >= MinimumLength &&
+							text.Length <= MaximumLength &&
+							(regex?.IsMatch(text) ?? false);
+			return new ValueTask<bool>(result);
 		}
 
 		static void OnRegexPropertyChanged(BindableObject bindable, object oldValue, object newValue)
