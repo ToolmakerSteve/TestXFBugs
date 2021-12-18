@@ -20,7 +20,7 @@ namespace TestBugs.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
 
-			SetColors();
+			//SetColors();
 		}
 
 		private void SetColors()

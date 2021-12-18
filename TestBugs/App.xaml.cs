@@ -13,6 +13,7 @@ namespace TestBugs
         {
 			//Test();
             InitializeComponent();
+			Sharpnado.Tabs.Initializer.Initialize(false, false);
 
 			//var fontsize = Application.Current.Resources["MyFontSize"];
 			//Application.Current.Resources["MyFontSize"] = 50.0;
@@ -28,7 +29,10 @@ namespace TestBugs
 			//MainPage = new SoftKeyboardEntryPage();
 			//MainPage = new TestPage();
 			//MainPage = new DatePickerTestPage();
-			MainPage = new PinCodePage();
+
+			//MainPage = new PinCodePage();
+			//MainPage = new TabBarPage();
+			MainPage = new TextValidationPage();
 		}
 
 		private void Test()
