@@ -21,6 +21,12 @@
             </Entry>
 
             <Button Text="Save" Clicked="OnSave">
+                <Button.IsEnabled>
+                    <MultiBinding  Converter="{StaticResource BooleanAndConverter}">
+                        <Binding Path="IsLastnameValid"/>
+                        <Binding Path="IsFirstnameValid"/>
+                    </MultiBinding>
+                </Button.IsEnabled>
             </Button>
         </StackLayout>
     </ContentPage.Content>

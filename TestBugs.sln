@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31729.503
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.31911.260
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBugs.Android", "TestBugs.Android\TestBugs.Android.csproj", "{2A04118F-68A1-40C2-B63F-47A4FB9278E9}"
 EndProject
@@ -164,7 +164,6 @@ Global
 		{FD7F17F5-4802-4384-85E4-0C1268BF660C}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{FD7F17F5-4802-4384-85E4-0C1268BF660C}.Debug|iPhone.Deploy.0 = Debug|Any CPU
 		{FD7F17F5-4802-4384-85E4-0C1268BF660C}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{FD7F17F5-4802-4384-85E4-0C1268BF660C}.Debug|iPhoneSimulator.Deploy.0 = Debug|Any CPU
 		{FD7F17F5-4802-4384-85E4-0C1268BF660C}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{FD7F17F5-4802-4384-85E4-0C1268BF660C}.Debug|x64.Build.0 = Debug|Any CPU
 		{FD7F17F5-4802-4384-85E4-0C1268BF660C}.Debug|x64.Deploy.0 = Debug|Any CPU
@@ -198,6 +197,7 @@ Global
 		{37F92B1F-0054-4EC8-B51E-7250686528F3}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{37F92B1F-0054-4EC8-B51E-7250686528F3}.Debug|iPhone.Build.0 = Debug|iPhone
 		{37F92B1F-0054-4EC8-B51E-7250686528F3}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{37F92B1F-0054-4EC8-B51E-7250686528F3}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 		{37F92B1F-0054-4EC8-B51E-7250686528F3}.Debug|x64.ActiveCfg = Debug|iPhone
 		{37F92B1F-0054-4EC8-B51E-7250686528F3}.Debug|x86.ActiveCfg = Debug|iPhone
 		{37F92B1F-0054-4EC8-B51E-7250686528F3}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
@@ -218,6 +218,7 @@ Global
 		{684579B5-E507-4FCA-9397-3B4A1A3E9D16}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{684579B5-E507-4FCA-9397-3B4A1A3E9D16}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{684579B5-E507-4FCA-9397-3B4A1A3E9D16}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{684579B5-E507-4FCA-9397-3B4A1A3E9D16}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{684579B5-E507-4FCA-9397-3B4A1A3E9D16}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{684579B5-E507-4FCA-9397-3B4A1A3E9D16}.Debug|x64.Build.0 = Debug|Any CPU
 		{684579B5-E507-4FCA-9397-3B4A1A3E9D16}.Debug|x86.ActiveCfg = Debug|Any CPU
