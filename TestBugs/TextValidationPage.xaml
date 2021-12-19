@@ -8,14 +8,14 @@
         <StackLayout>
             <Entry Placeholder="Lastname" Text="{Binding Lastname}">
                 <Entry.Behaviors>
-                    <local:TextValidationBehavior MinimumLength="3" MaximumLength="10"
+                    <xct:TextValidationBehavior MinimumLength="3" MaximumLength="10"
                      Flags="ValidateOnAttaching" IsValid="{Binding IsLastnameValid}"/>
                 </Entry.Behaviors>
             </Entry>
 
             <Entry Placeholder="Firstname" Text="{Binding Firstname}">
                 <Entry.Behaviors>
-                    <local:TextValidationBehavior MinimumLength="3" MaximumLength="10"
+                    <xct:TextValidationBehavior MinimumLength="3" MaximumLength="10"
                      Flags="ValidateOnAttaching" IsValid="{Binding IsFirstnameValid}"/>
                 </Entry.Behaviors>
             </Entry>
