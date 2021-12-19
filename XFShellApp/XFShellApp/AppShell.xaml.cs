@@ -15,6 +15,14 @@ namespace XFShellApp
 			Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
 			// Define a route that isn't a child of Shell.
 			Routing.RegisterRoute("Help2", typeof(HelpPage));
+
+			//if (true) {
+			//	// Start on login page.
+			//	Device.BeginInvokeOnMainThread(async () => {
+			//		await System.Threading.Tasks.Task.Delay(100);
+			//		await Shell.Current.GoToAsync("//LoginPage");
+			//	});
+			//}
 		}
 
 		private async void OnMenuItemClicked(object sender, EventArgs e)
