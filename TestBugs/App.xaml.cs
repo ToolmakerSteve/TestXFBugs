@@ -32,7 +32,8 @@ namespace TestBugs
 
 			//MainPage = new PinCodePage();
 			//MainPage = new TabBarPage();
-			MainPage = new TextValidationPage();
+			//MISSING_CONVERTER MainPage = new TextValidationPage();
+			MainPage = new EvenlySpaceItems();
 		}
 
 		private void Test()
