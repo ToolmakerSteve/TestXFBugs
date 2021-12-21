@@ -13,7 +13,7 @@ namespace TestBugs
         {
 			//Test();
             InitializeComponent();
-			Sharpnado.Tabs.Initializer.Initialize(false, false);
+			//Sharpnado.Tabs.Initializer.Initialize(false, false);
 
 			//var fontsize = Application.Current.Resources["MyFontSize"];
 			//Application.Current.Resources["MyFontSize"] = 50.0;
@@ -33,7 +33,8 @@ namespace TestBugs
 			//MainPage = new PinCodePage();
 			//MainPage = new TabBarPage();
 			//MISSING_CONVERTER MainPage = new TextValidationPage();
-			MainPage = new EvenlySpaceItems();
+			//MainPage = new EvenlySpaceItems();
+			MainPage = new TapFramePage();
 		}
 
 		private void Test()

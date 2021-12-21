@@ -8,34 +8,15 @@
             <BoxView Color="Red" Grid.Row="0" Grid.Column="0"/>
             <BoxView Color="Red" Grid.Row="0" Grid.Column="2"/>
             <CollectionView Grid.Row="0" Grid.Column="1" x:Name="clv" ItemsSource="{Binding ImagesArray}" 
-                            BackgroundColor="Gray"
                             ItemsLayout="VerticalGrid, 5" >
-                <!--ItemsLayout="VerticalGrid, 5"-->
-                <!--<CollectionView.ItemsLayout>
-                    <GridItemsLayout Span="5" Orientation="Vertical" SnapPointsAlignment="Center"/>
-                </CollectionView.ItemsLayout>-->
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <!--RowDefinitions="*,Auto,*"-->
                         <Grid ColumnDefinitions="*,Auto,*">
                             <BoxView Grid.Column="1" WidthRequest="40" Color="Blue" VerticalOptions="Center"/>
                         </Grid>
-                        <!--<StackLayout BackgroundColor="Yellow" Orientation="Horizontal">-->
-                            <!--<Label Text="{Binding Name}" BackgroundColor="Pink" HorizontalTextAlignment="Center" />-->
-                        <!--</StackLayout>-->
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-            <!--<Grid Grid.Row="0" Grid.Column="1" ColumnDefinitions="*,*,*,*,*"
-                  BindableLayout.ItemsSource="{Binding ImagesArray}"
-                  >
-                <BindableLayout.ItemTemplate>
-                    <DataTemplate>
-                        <Label Text="{Binding Name}" />
-                        --><!--<BoxView WidthRequest="20" Color="Blue" HorizontalOptions="End"/>--><!--
-                    </DataTemplate>
-                </BindableLayout.ItemTemplate>
-            </Grid>-->
         </Grid>
     </ContentPage.Content>
 </ContentPage>
