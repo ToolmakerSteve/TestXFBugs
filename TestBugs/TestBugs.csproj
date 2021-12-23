@@ -11,6 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="index.html" />
     <None Remove="Media\apple_x64.png" />
     <None Remove="Media\boat_on_water_x64.png" />
     <None Remove="Media\pine_tree_x64.png" />
@@ -18,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="index.html" />
     <EmbeddedResource Include="Media\apple_x64.png" />
     <EmbeddedResource Include="Media\boat_on_water_x64.png" />
     <EmbeddedResource Include="Media\pine_tree_x64.png" />

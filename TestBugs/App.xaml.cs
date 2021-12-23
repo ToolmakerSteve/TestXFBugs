@@ -11,7 +11,6 @@ namespace TestBugs
     {
         public App()
         {
-			//Test();
             InitializeComponent();
 			//Sharpnado.Tabs.Initializer.Initialize(false, false);
 
@@ -41,7 +40,13 @@ namespace TestBugs
 
 		private void Test()
 		{
-			UnionStruct.Test1();
+			//UnionStruct.Test1();
+
+			Device.BeginInvokeOnMainThread(async () =>
+			{
+				await System.Threading.Tasks.Task.Delay(200);
+				var names = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceNames();
+			});
 		}
 
 		//private string _SearchText;
@@ -88,6 +93,7 @@ namespace TestBugs
 
 		protected override void OnStart()
         {
+			//Test();
         }
 
         protected override void OnSleep()
