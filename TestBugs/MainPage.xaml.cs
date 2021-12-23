@@ -30,6 +30,8 @@ namespace TestBugs
             InitializeComponent();
             // In this simple example, the binding sources are in the page itself.
             BindingContext = this;
+
+			Test();
         }
 
 
@@ -39,6 +41,12 @@ namespace TestBugs
 
             BackgroundTestLoop();
         }
+
+
+		private void Test()
+		{
+			//Device.StartTimer(...);
+		}
 
         static Random Rand = new Random();
 

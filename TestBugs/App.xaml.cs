@@ -33,8 +33,10 @@ namespace TestBugs
 			//MainPage = new PinCodePage();
 			//MainPage = new TabBarPage();
 			//MISSING_CONVERTER MainPage = new TextValidationPage();
+			//MainPage = new TapFramePage();
+			//MainPage = new FrameWithHeaderLabelPage();
 			//MainPage = new EvenlySpaceItems();
-			MainPage = new TapFramePage();
+			MainPage = new EvenlySpaceItemsScrolling();
 		}
 
 		private void Test()

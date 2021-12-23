@@ -28,8 +28,6 @@ namespace TestBugs
 			new Model(),
 			new Model(),
 		};
-
-
 	}
 
 
