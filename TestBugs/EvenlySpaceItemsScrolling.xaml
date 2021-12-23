@@ -13,9 +13,6 @@
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <!--<Grid ColumnDefinitions="*,Auto,*">
-                            <BoxView Grid.Column="1" WidthRequest="30" HeightRequest="30" Color="Blue" VerticalOptions="Center"/>
-                        </Grid>-->
                         <StackLayout>
                             <BoxView WidthRequest="30" HeightRequest="30" Color="Blue" VerticalOptions="Center"/>
                         </StackLayout>
