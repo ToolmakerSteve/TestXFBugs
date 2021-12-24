@@ -35,7 +35,9 @@ namespace TestBugs
 			//MainPage = new TapFramePage();
 			//MainPage = new FrameWithHeaderLabelPage();
 			//MainPage = new EvenlySpaceItems();
-			MainPage = new EvenlySpaceItemsScrolling();
+			//MainPage = new EvenlySpaceItemsScrolling();
+
+			MainPage = new MyAbsoluteLayoutPage();
 		}
 
 		private void Test()

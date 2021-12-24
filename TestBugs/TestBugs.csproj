@@ -35,6 +35,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="MyAbsoluteLayoutPage.xaml.cs">
+      <DependentUpon>MyAbsoluteLayoutPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="MyPage1.xaml.cs">
       <DependentUpon>MyPage1.xaml</DependentUpon>
     </Compile>
@@ -45,6 +48,9 @@
 
   <ItemGroup>
     <EmbeddedResource Update="AbsoluteLayoutPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MyAbsoluteLayoutPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="DatePickerTestPage.xaml">
